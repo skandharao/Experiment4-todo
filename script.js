@@ -63,3 +63,9 @@ addButton.addEventListener("click", function() {
     }
 
 });
+
+taskInput.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        addButton.click();
+    }
+});
